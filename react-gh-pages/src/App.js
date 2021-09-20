@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const data = [
+    {
+      name: "Bettina Benitez",
+      email: "bbenitez22@cmc.edu",
+      phone: "(415) 549-6560",
+    },
+    {
+      name: "Natasha Wong",
+      email: "nwong22@cmc.edu",
+      phone: "(909) 675 6412",
+    },
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>People</h1>
+      </div>
+
+      {data.map((obj) =>
+        <div style={{display: "flex", flexDirection: "row"}}>
+          <p><b>{obj.name}</b></p>
+          <p>{obj.email}</p>
+          <p>{obj.phone}</p>
+        </div>
+      )}
+
+    </>
   );
 }
 
