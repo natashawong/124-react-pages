@@ -3,6 +3,15 @@ p {
   margin: 0px;
 }
 
+.email {
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
 .App {
   text-align: center;
 }

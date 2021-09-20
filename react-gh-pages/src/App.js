@@ -20,9 +20,9 @@ function App() {
       </div>
 
       {data.map((obj) =>
-        <div style={{display: "flex", flexDirection: "row"}}>
+        <div className="container">
           <p><b>{obj.name}</b></p>
-          <p>{obj.email}</p>
+          <p className="email">{obj.email}</p>
           <p>{obj.phone}</p>
         </div>
       )}
