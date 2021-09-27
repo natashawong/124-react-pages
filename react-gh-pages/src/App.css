@@ -1,5 +1,4 @@
 p {
-  padding-right: 20px;
   margin: 0px;
 }
 
@@ -8,8 +7,10 @@ p {
 }
 
 .container {
+  width: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .App {
